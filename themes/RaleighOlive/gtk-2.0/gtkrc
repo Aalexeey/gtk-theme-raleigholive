@@ -1,0 +1,238 @@
+# Most of the styling is done natively by GTK+ 2 since the default GTK+ 2
+# style is Raleigh.  This file only sets the color scheme to use.
+
+gtk-color-scheme = "base_color:#ffffff\nfg_color:#000000\ntooltip_fg_color:#000000\nselected_bg_color:#8aae5a\nselected_fg_color:#ffffff\ntext_color:#000000\nbg_color:#dde3d4\ntooltip_bg_color:#eaf5b5\nlink_color:#0000ee\nvisited_link_color:#551a8b"
+
+
+style "default" {
+	GtkWidget::link-color         = @link_color
+	GtkWidget::visited-link-color = @visited_link_color
+	GtkScrollbar::slider-width = 14         # Default 14
+	GtkRange::stepper-size = 14             # Default 14
+	GtkRange::arrow-scaling = 0.5           # Default 0.5
+    GtkWidget::scroll-arrow-hlength = 16    # Default 16
+    GtkWidget::scroll-arrow-vlength = 16    # Default 16
+
+	bg[NORMAL]        = @bg_color
+	bg[PRELIGHT]      = '#f3f5ef'           # Bars, sliders and tabs trough bg
+	bg[SELECTED]      = @selected_bg_color
+	bg[INSENSITIVE]   = @bg_color
+	bg[ACTIVE]        = '#bcc1b4'           # Bars, sliders and tabs slider bg
+
+	base[SELECTED]    = @selected_bg_color
+	base[INSENSITIVE] = '#f3f5ef'           # Entry insensitive box bg
+}
+
+class "GtkWidget"               style "default"
+
+style "raleigh-menu-item" {
+    engine "pixmap" {
+
+# Check Buttons
+
+    image {
+      function  = CHECK
+      recolorable = TRUE
+      state = NORMAL
+      shadow = OUT
+      overlay_file = "../gtk-assets/checks/check-unchecked.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = CHECK
+      recolorable = TRUE
+      state = PRELIGHT
+      shadow = OUT
+      overlay_file = "../gtk-assets/checks/check-unchecked.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = CHECK
+      recolorable = TRUE
+      state = ACTIVE
+      shadow = OUT
+      overlay_file = "../gtk-assets/checks/check-unchecked.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = CHECK
+      recolorable = TRUE
+      state = SELECTED
+      shadow = OUT
+      overlay_file = "../gtk-assets/checks/check-unchecked.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = CHECK
+      recolorable = TRUE
+      state = INSENSITIVE
+      shadow = OUT
+      overlay_file = "../gtk-assets/checks/check-unchecked-disabled.png"
+      overlay_stretch = FALSE
+    }
+       
+    image {
+      function = CHECK
+      recolorable = TRUE
+      state = NORMAL
+      shadow = IN
+      overlay_file = "../gtk-assets/checks/check-checked.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = CHECK
+      recolorable = TRUE
+      state = PRELIGHT
+      shadow = IN
+      overlay_file = "../gtk-assets/checks/check-checked.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = CHECK
+      recolorable = TRUE
+      state = ACTIVE
+      shadow = IN
+      overlay_file = "../gtk-assets/checks/check-checked.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = CHECK
+      recolorable = TRUE
+      state = SELECTED
+      shadow = IN
+      overlay_file = "../gtk-assets/checks/check-checked.png"
+      overlay_stretch = FALSE
+    }
+    
+    image {
+      function = CHECK
+      recolorable = TRUE
+      state = INSENSITIVE
+      shadow = IN
+      overlay_file = "../gtk-assets/checks/check-checked-disabled.png"
+      overlay_stretch = FALSE
+    }
+    
+    image {
+      function = OPTION
+      state = NORMAL
+      shadow = OUT
+      overlay_file = "../gtk-assets/checks/radio-unchecked.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = OPTION
+      state = PRELIGHT
+      shadow = OUT
+      overlay_file = "../gtk-assets/checks/radio-unchecked.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = OPTION
+      state = ACTIVE
+      shadow = OUT
+      overlay_file = "../gtk-assets/checks/radio-unchecked.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = OPTION
+      state = SELECTED
+      shadow = OUT
+      overlay_file = "../gtk-assets/checks/radio-unchecked.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = OPTION
+      state = INSENSITIVE
+      shadow = OUT
+      overlay_file = "../gtk-assets/checks/radio-unchecked-disabled.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = OPTION
+      state = NORMAL
+      shadow = IN
+      overlay_file = "../gtk-assets/checks/radio-checked.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = OPTION
+      state = PRELIGHT
+      shadow = IN
+      overlay_file = "../gtk-assets/checks/radio-checked.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = OPTION
+      state = ACTIVE
+      shadow = IN
+      overlay_file = "../gtk-assets/checks/radio-checked.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = OPTION
+      state = SELECTED
+      shadow = IN
+      overlay_file = "../gtk-assets/checks/radio-checked.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function = OPTION
+      state = INSENSITIVE
+      shadow = IN
+      overlay_file = "../gtk-assets/checks/radio-checked-disabled.png"
+      overlay_stretch = FALSE
+    } 
+  }
+}
+
+widget_class "*<GtkMenuItem>*"      style "raleigh-menu-item"
+widget_class "*<GtkCheckButton>*"   style "raleigh-menu-item"
+widget_class "*<GtkRadioButton>*"   style "raleigh-menu-item"
+widget_class "*<GtkTreeView>*"      style "raleigh-menu-item"
+
+style "raleigh-menu" {
+    bg[PRELIGHT]    = @selected_bg_color
+}
+
+widget_class "*<GtkMenuBar>*"       style "raleigh-menu"
+widget_class "*<GtkMenuItem>*"      style "raleigh-menu"
+
+style "raleigh-progress"
+{
+    bg[NORMAL]      = '#bcc1b4' # Progressbar bg
+	bg[PRELIGHT]    = '#f3f5ef' # Progressbar hoover color
+}
+
+widget_class "*.<GtkProgress>"      style "raleigh-progress"
+
+style "raleigh-tooltips"
+{
+    bg[NORMAL]      = @tooltip_bg_color
+    fg[NORMAL]      = @tooltip_fg_color
+}
+
+widget "gtk-tooltip*"               style "raleigh-tooltips"
+
+style "raleigh-buttons"
+{
+	bg[PRELIGHT]    = '#f3f5ef' # Selected just touched button
+}
+
+class "GtkButton"                   style "raleigh-buttons"
