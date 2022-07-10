@@ -1,0 +1,190 @@
+/************************
+ * Style rules for MATE *
+ ************************/
+
+/* Style rules for Atril */
+
+.atril-window scrolledwindow {
+    margin: 1px;
+}
+
+/* Style rules for Caja */
+
+.view > widget.view
+{
+	background-color: @selected_fg_color;
+}
+
+.view > widget.view:selected
+{
+	background-color: @selected_bg_color;
+}
+
+.view > widget.view:selected,
+.view > widget.view:selected *
+{
+	color: @selected_fg_color;
+}
+
+widget.view.rubberband
+{
+	background-color: alpha (@selected_bg_color, 0.6);
+}
+
+/*
+ * The following style declaration themes EelEditableLabels, which are used
+ * primary by Caja (and possibly other file managers) for the pop-up text
+ * fields used for renaming files in Icon and Compact views.
+ *
+ * Even though an EelEditableLabel is not a GtkEntry, we try our best to make
+ * the two look identical.
+ */
+widget.entry:not(:selected)
+{
+	/*
+	 * Oddly, `background-color` does not work here; we must use
+	 * `background` in order for EelEditableLabels to have an appropriate
+	 * background.
+	 */
+	background: @selected_fg_color;
+	border-image-width: 2px;
+	border-image-slice: 2;
+	border-radius: 0;
+}
+
+.caja-navigation-window scrolledwindow.frame {
+	border: 2px;
+    border-style: solid;
+	border-image-source: url('../../gtk-assets/borders/frame-border.png');
+	border-image-slice: 2;
+    box-shadow: none;
+    margin: 1px;
+}
+
+.caja-navigation-window .caja-side-pane scrolledwindow.frame {
+	border: 2px;
+    border-style: solid;
+	border-image-source: url('../../gtk-assets/borders/border-sunken.png');
+	border-image-slice: 2;
+    box-shadow: none;
+    margin: 0px 0px 0px 0px;
+}
+
+.caja-navigation-window statusbar > * {
+	border-image-source: none;
+	border-image-width: 0px;
+	margin: 1px 0px 3px 0px;
+}
+
+.caja-navigation-window notebook tabs button {
+    padding: 2px;
+    margin: -1px 0px -3px 0px;
+}
+
+.caja-navigation-window notebook scrollbar.horizontal {
+	margin: -3px -3px -1px -1px;
+}
+
+.caja-navigation-window notebook scrollbar.vertical {
+	margin: -30px -1px -30px -3px;
+}
+
+/* Style rules for EOM */
+
+.eom-window scrolledwindow {
+    margin: 1px;
+}
+
+.eom-window scrollbar.horizontal {
+    margin: 0px 0px 2px 0px;
+}
+
+.eom-window scrollbar.vertical {
+    margin: -28px 0px -28px 0px;
+}
+
+.eom-window statusbar {;
+    margin: -1px -2px 1px -14px;
+}
+
+.eom-window statusbar > *
+{
+	padding: 3px 0px 1px 2px;
+}
+
+/* Style rules for Engrampa */
+
+.engrampa-window statusbar {
+    margin: 1px 0px 1px -14px;
+}
+
+.engrampa-window scrolledwindow {
+    margin: 1px;
+}
+
+/* Marco, the MATE window manager */
+
+window.background:selected
+{
+	background-color: @selected_bg_color;
+	color: @selected_fg_color;
+}
+
+/* MATE Panel */
+
+/* The panel menubar doesn't need a whole lot of padding -- adding the padding
+ * has the effect of oversizing the panel and thus all the icons on the panel.
+ */
+PanelWidget menubar
+{
+	border: none;
+	padding: 0;
+}
+
+PanelWidget
+{
+    background-image: none;
+}
+
+/* Give some panel widgets (like the window list and the notification area) a draggable grip. */
+/* Ограничители похожие на разделители по краям апплетов внутрь на панели MATE */
+MatePanelAppletFrameDBus > MatePanelAppletFrameDBus
+{
+	border-image-width: 1px 0 2px 0;
+	border-image-slice: 1 2 2 1;
+	background-repeat: repeat-y;
+	background-position: top left;
+	background-size: 10px 4px;
+	background-image: url("../../gtk-assets/miscellaneous/panel-item-grip.png");
+}
+
+/* Style rules for MATE Terminal */
+
+.mate-terminal notebook stack > box {
+	border: 2px;
+    border-style: solid;
+	border-image-source: url('../../gtk-assets/borders/border-sunken.png');
+	border-image-slice: 2;
+    box-shadow: none;
+    margin: 1px;
+}
+
+/* Style rules for Pluma */
+
+.pluma-window scrolledwindow {
+    margin: 0px;
+}
+
+.pluma-print-preview scrolledwindow {
+    margin: 1px 0px 0px 0px;
+}
+
+.pluma-window statusbar {
+    margin: -1px 16px 1px -14px;
+}
+
+.pluma-window statusbar > * {
+	padding: 3px 0px 1px 2px;
+}
+
+/* top right bottom left */

@@ -1,0 +1,137 @@
+/*
+ * Check and radio buttons
+ */
+
+checkbutton,
+radiobutton
+{
+	padding: 2px;
+}
+
+checkbutton:hover,
+radiobutton:hover
+{
+	background-color: @hover_bg_color;
+}
+
+/*
+ * The rest of this code is a little dissimilar to the above, since this code
+ * draws checks and radios for treeview cells too.
+ */
+
+:not(menuitem) > check,
+:not(menuitem) > radio
+{
+	min-width: 13px;
+	min-height: 13px;
+}
+
+:not(menuitem) > check:first-child,
+:not(menuitem) > radio:first-child
+{
+	margin-right: 6px;
+}
+
+:not(menuitem) > check:last-child,
+:not(menuitem) > radio:last-child
+{
+	margin-left: 6px;
+}
+menuitem > check
+{
+	background: none;
+	min-width: 13px;
+	min-height: 13px;
+	margin: 0 6px 0 2px;
+}
+
+menuitem > radio
+{
+	background: none;
+	min-width: 13px;
+	min-height: 13px;
+	margin: 0 8px 0 3px;
+}
+
+check
+/* menuitem > check тоже, выпадающее меню из панели меню сверху */
+{
+	-gtk-icon-source: url('../../gtk-assets/checks/check-unchecked.png');
+}
+
+check:checked
+{
+	-gtk-icon-source: url('../../gtk-assets/checks/check-checked.png');
+}
+
+check:disabled
+{
+	-gtk-icon-source: url('../../gtk-assets/checks/check-unchecked-disabled.png');
+}
+
+check:checked:disabled
+{
+	-gtk-icon-source: url('../../gtk-assets/checks/check-checked-disabled.png');
+}
+
+check:indeterminate,
+check:indeterminate:checked
+{
+	-gtk-icon-source: url('../../gtk-assets/checks/check-indeterminate.png');
+}
+
+check:indeterminate:disabled
+{
+	-gtk-icon-source: url('../../gtk-assets/checks/check-indeterminate-disabled.png');
+}
+
+radio
+{
+	-gtk-icon-source: url('../../gtk-assets/checks/radio-unchecked.png');
+}
+
+radio:checked
+{
+	-gtk-icon-source: url('../../gtk-assets/checks/radio-checked.png');
+}
+
+radio:disabled
+{
+	-gtk-icon-source: url('../../gtk-assets/checks/radio-unchecked-disabled.png');
+}
+
+radio:checked:disabled
+{
+	-gtk-icon-source: url('../../gtk-assets/checks/radio-checked-disabled.png');
+}
+
+radio:indeterminate,
+radio:indeterminate:checked
+{
+	-gtk-icon-source: url('../../gtk-assets/checks/radio-indeterminate.png');
+}
+
+radio:indeterminate:disabled
+{
+	-gtk-icon-source: url('../../gtk-assets/checks/radio-indeterminate-disabled.png');
+}
+
+menuitem > check:indeterminate,
+menuitem > check:indeterminate:checked,
+menuitem > radio:indeterminate,
+menuitem > radio:indeterminate:checked
+{
+	-gtk-icon-source: url('../../gtk-assets/checks/item-checked-indeterminate.png');
+}
+
+menuitem > check:indeterminate:disabled,
+menuitem > radio:indeterminate:disabled
+{
+	-gtk-icon-source: url('../../gtk-assets/checks/item-checked-indeterminate-disabled.png');
+}
+
+menuitem:hover > check:indeterminate,
+menuitem:hover > radio:indeterminate
+{
+	-gtk-icon-source: url('../../gtk-assets/checks/item-indeterminate-hover.png');
+}

@@ -1,0 +1,45 @@
+/************
+ * Info bar *
+ ************/
+
+
+infobar.error,
+infobar.info,
+infobar.question,
+infobar.warning
+{
+	border-image-width: 1px 2px 2px 1px;
+	border-image-slice: 1 2 2 1;
+}
+
+infobar.error *,
+infobar.info *,
+infobar.question *,
+infobar.warning *
+{
+	color: @fg_color;
+}
+
+infobar.error
+{
+	background-color: @error_destructive_bg_color;
+	border-image-source: url('../../gtk-assets/borders/error-destructive-border.png');
+}
+
+infobar.info
+{
+	background-color: @info_bg_color;
+	border-image-source: url('../../gtk-assets/borders/info-border.png');
+}
+
+infobar.question
+{
+	background-color: @bg_color;
+	border-image-source: url('../../gtk-assets/borders/question-suggested-border.png');
+}
+
+infobar.warning
+{
+	background-color: @warning_bg_color;
+	border-image-source: url('../../gtk-assets/borders/warning-border.png');
+}

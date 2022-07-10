@@ -1,0 +1,52 @@
+/****************************
+ * Links and linked buttons *
+ ****************************/
+
+.linked.horizontal > button
+{
+	margin: 0 3px 0 3px;
+}
+.linked.horizontal > button:first-child
+{
+	margin-left: 0px;
+}
+.linked.horizontal > button:last-child
+{
+	margin-right: 0px;
+}
+
+.linked.vertical > button
+{
+	margin: 3px 0 3px 0;
+}
+.linked.vertical > button:first-child
+{
+	margin-top: 0px;
+}
+.linked.vertical > button:last-child
+{
+	margin-bottom: 0px;
+}
+
+.link,
+*:link,
+button.link label,
+button.link:hover *:not(:disabled)
+{
+	color: @link_color;
+	text-decoration: underline;
+}
+
+*:link:disabled,
+button.link label:disabled
+{
+	color: @dark_bg_color;
+	text-shadow: 1px 1px @selected_fg_color;
+}
+
+*:visited,
+button:visited > label,
+button:visited:hover *:not(:disabled) {
+    text-decoration-line: underline;
+    color: @visited_link_color;
+}

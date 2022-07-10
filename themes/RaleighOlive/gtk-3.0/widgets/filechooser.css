@@ -1,0 +1,31 @@
+/***************
+ * Filechooser *
+ ***************/
+
+filechooser {
+	margin: 6px 6px 1px 6px;
+}
+
+filechooser viewport.frame list:dir(rtl) {
+    margin: -1px 0px 0px 0px;
+}
+
+/* Поле для ввода имени файла сверху */
+filechooser entry {
+	margin: -6px -10px -2px -4px;
+}
+
+/* Три совмещённые кнопки навигации по папкам */
+filechooser .linked button:first-child {
+	margin: -5px 6px 5px -6px;
+}
+
+filechooser .linked button {
+	margin: -5px 6px 5px -6px;
+}
+
+filechooser .linked button:last-child {
+	margin: -5px 6px 5px -6px;
+}
+
+/* top right bottom left */

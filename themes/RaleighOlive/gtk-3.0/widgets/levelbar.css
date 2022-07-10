@@ -1,0 +1,42 @@
+/*********************************
+ * Level Bar * Тонкие индикаторы * 
+ *********************************/
+
+levelbar {
+  padding: 2px; 
+}
+
+levelbar trough {
+	background: @bar_bg_color;
+}
+
+levelbar.vertical trough {
+	min-width: 7px;
+}
+
+levelbar.horizontal trough {
+	min-height: 7px;
+}
+
+levelbar block {
+    background-image: none;
+    background-color: @selected_bg_color;
+	margin: 1px;
+	padding: 3px;
+}
+
+levelbar block.filled {
+	background: @selected_bg_color;
+}
+
+levelbar block.empty {
+    background-color: @bar_bg_color; 
+}
+
+levelbar.vertical.discrete block {
+  margin-top: 2px; 
+}
+
+levelbar.horizontal.discrete block {
+  margin-right: 2px;
+} 

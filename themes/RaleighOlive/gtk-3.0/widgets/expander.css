@@ -1,0 +1,31 @@
+/************* 
+ * Expanders *
+ *************/
+ 
+expander title {
+
+    padding: 2px 60px 3px 2px;
+}
+
+expander title:hover
+{
+	background-color: @hover_bg_color;
+}
+
+expander > title > arrow
+{
+	min-width: 14px;
+	min-height: 14px;
+    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+    padding: 2px;
+}
+
+expander > title > arrow:dir(rtl)
+{
+    -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
+}
+
+expander > title > arrow:checked
+{
+	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+}

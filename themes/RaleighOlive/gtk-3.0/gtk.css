@@ -1,0 +1,27 @@
+@define-color bg_color                                      #dde3d4;
+@define-color bar_bg_color                                  #bcc1b4;
+@define-color colorswatch_bg_color                          #ff1100;
+@define-color dark_bg_color                                 #777777;
+@define-color error_destructive_bg_color                    #f03838;
+@define-color destructive_hover_bg_color                    shade(@error_destructive_bg_color, 1.1);
+@define-color hover_bg_color                                #f3f5ef;
+@define-color info_bg_color                                 #ffffbf;
+@define-color selected_bg_color                             #8aae5a;
+@define-color selected_unfocused_bg_color                   #9c9a94;
+@define-color suggested_hover_bg_color                      shade(@bg_color, 1.1);
+@define-color tooltip_bg_color                              #eaf5b5;
+@define-color warning_bg_color                              #fcaf3e;
+
+@define-color fg_color                                      #000000;
+@define-color selected_fg_color                             #ffffff;
+
+@define-color link_color                                    #0e0eec;
+@define-color visited_link_color                            #510a90;
+
+@define-color selected_even_color                           #eeeeee;
+
+@define-color border_color                                  shade(@bg_color, 0.60);
+
+
+@import url('main.css');
+@import url('border.css');

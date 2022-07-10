@@ -1,0 +1,35 @@
+/***************
+ * All widgets *
+ ***************/
+
+@import url('assistant.css');
+@import url('button.css');
+@import url('check_and_radio.css');
+@import url('color-chooser.css');
+@import url('combobox.css');
+@import url('expander.css');
+@import url('filechooser.css');
+@import url('frame.css');
+@import url('infobar.css');
+@import url('levelbar.css');
+@import url('linked-button.css');
+@import url('list_and_view.css');
+@import url('notebook.css');
+@import url('menu-foible.css');
+@import url('menu_and_popup.css');
+@import url('progressbar.css');
+@import url('scrollbar_and_scale.css');
+@import url('scrolledwindow.css');
+@import url('row_and_cell.css');
+@import url('separator.css');
+@import url('spinner.css');
+@import url('statusbar.css');
+@import url('switch.css');
+@import url('toolbar.css');
+@import url('window-decoration.css');
+
+/*
+ * This should always be the last line of this file, no matter where it
+ * would sit in alphabetical order.
+ */
+@import url('miscellaneous.css');

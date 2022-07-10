@@ -1,0 +1,18 @@
+/******************
+ * Rows and cells *
+ ******************/
+
+* {
+  -GtkTreeView-allow-rules: 1;
+  -GtkTreeView-even-row-color: @selected_even_color;
+}
+
+row:hover
+{
+	background-color: @selected_even_color;
+}
+
+.cell:selected:hover
+{
+    background-color: @selected_unfocused_bg_color;
+}

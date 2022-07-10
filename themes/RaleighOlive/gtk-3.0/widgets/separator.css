@@ -1,0 +1,59 @@
+/**************
+ * Separators *
+ **************/
+
+/*
+ * A bog-standard separator widget, or almost any kind of separator you'll see.
+ *
+ * The separator widget is simply a 3D-esque border.  That's all it needs to be.
+ */
+separator
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: @dark_bg_color @selected_fg_color @selected_fg_color @dark_bg_color;
+	margin: 2px;
+}
+
+
+/*
+ * A special case for the separator between two sides of a paned widget.
+ *
+ * This kind of separator really has very little to do with the separator
+ * above.  In fact, we have to unset many properties, including the border.
+ * This kind of separator includes a centered background image of seven dots
+ * to show that the separator can be dragged.
+ *
+ * XXX:  Due to a GTK+ bug, centered backgrounds are aligned at the true center
+ * of a widget / CSS node even if one or both dimensions of the node are odd
+ * numbers.  Therefore, the background image will be blurred if the paned
+ * widget is an odd number of pixels tall.  There appears to be no workaround
+ * for this bug as of yet.
+ */
+
+paned > separator
+{
+	-gtk-icon-source: none;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: none;
+}
+
+paned > separator:hover
+{
+	background-color: @hover_bg_color;
+}
+
+paned.horizontal > separator
+{
+	min-width: 5px;
+	background-image: url('../../gtk-assets/separators/paned-separator-vertical.png');
+}
+
+paned.vertical > separator
+{
+	min-height: 5px;
+	background-image: url('../../gtk-assets/separators/paned-separator-horizontal.png');
+}
+
+/* top right bottom left */

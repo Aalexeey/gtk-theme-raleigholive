@@ -1,0 +1,65 @@
+/**************
+ * Status bar *
+ **************
+ * Buttons that were packed into status bars in GTK+ 2 appeared sunken, some
+ * of the few buttons that always appeared sunken at the time.  Some GTK+ 3
+ * applications still do this -- for example, the Pluma text editor -- so we
+ * handle the case where buttons appear in the status bar.
+ */
+
+statusbar {
+	min-height: 18px;
+    margin: -2px -2px -4px -14px;
+}
+
+statusbar > *
+{
+	border-image-source: url('../gtk-assets/borders/border-sunken.png');
+	border-image-width: 2px 1px 1px 2px;
+	border-image-slice: 2 1 1 2;
+	padding: 4px;
+}
+
+statusbar button
+{
+	border-image-width: 0px;
+	border-image-slice: 0;
+	padding: 0px;
+}
+
+/* Ограничивает высоту/толщину панели */
+statusbar frame > box {
+	margin: -7px -2px -5px 0px;
+}
+
+statusbar > frame > border,
+statusbar > widget > frame > border
+{
+	border: none;
+	padding: 0;
+}
+
+/*
+ * A special exception:  If the progress bar is embedded in a status bar,
+ * don't make the progress bar taller than the status bar.
+ *
+ * Also, level bars should not be as tall as ordinary progress bars.
+ */
+statusbar progressbar.horizontal trough,
+statusbar progressbar.horizontal progress
+{
+	min-height: 16px;
+}
+
+statusbar progressbar.vertical trough,
+statusbar progressbar.vertical progress
+{
+	min-width: 16px;
+}
+
+statusbar label,
+statusbar box {
+	border: 0px;
+}
+
+/* top right bottom left */

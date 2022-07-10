@@ -1,0 +1,74 @@
+/**********
+ * Frames *
+ **********/
+
+frame
+{
+	margin: 0 4px;
+}
+
+frame > border
+{
+	margin: 0 -4px;
+	padding: 2px;
+}
+
+/*
+ * Add a simpler, more generic frame around any other normal node that requests
+ * a frame
+ */
+.frame.view
+{
+	border: 1px solid @border_color;
+}
+
+frame.border-outset border {
+    padding: 2px;
+    border: 2px solid;
+    border-image-source: url('../../gtk-assets/borders/border.png');
+    border-image-slice: 2;
+    border-radius: 0px;
+    box-shadow: none; 
+}
+
+frame.border-outset label {
+    padding-right: 4px; 
+}
+
+frame.border-inset border {
+    padding: 2px;
+    border: 2px solid;
+    border-image-source: url('../../gtk-assets/borders/border-sunken.png');
+    border-image-slice: 2;
+    border-radius: 0px;
+    box-shadow: none; 
+}
+frame.border-inset label {
+    padding-right: 4px; 
+}
+
+frame.border-groove border {
+    padding: 2px;
+    border: 2px solid;
+    border-image-source: url('../../gtk-assets/borders/frame-border.png');
+    border-image-slice: 2;
+    border-radius: 0px;
+    box-shadow: none; 
+}
+
+frame.border-groove label {
+    padding-right: 4px; 
+}
+
+frame.border-ridge border {
+    padding: 2px;
+    border: 2px solid;
+    border-image-source: url('../../gtk-assets/borders/frame-border-ridge.png');
+    border-image-slice: 2;
+    border-radius: 0px;
+    box-shadow: none; 
+}
+
+frame.border-ridge label {
+    padding-right: 4px; 
+}
