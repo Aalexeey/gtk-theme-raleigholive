@@ -76,10 +76,12 @@ widget.entry:not(:selected)
 	margin: 1px 0px 3px 0px;
 }
 
+/*
 .caja-navigation-window notebook tabs button {
     padding: 2px;
     margin: -1px 0px -3px 0px;
 }
+*/
 
 .caja-navigation-window notebook scrollbar.horizontal {
 	margin: -3px -3px -1px -1px;
