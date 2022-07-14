@@ -2,32 +2,20 @@
  * Borders *
  ***********/
 
-
-/* From widgets/buttons.css */
 button,
 button.flat:hover,
 button.link:hover,
-/* From widgets/color-choosers.css */
 colorswatch#add-color-button,
-/* From widgets/lists-and-views.css */
 calendar.header,
-/* From widgets/menus-and-popups.css */
 menu > arrow,
 menubar,
-/* From widgets/miscellaneous.css */
 toolbar,
 .emoji-picker stack scrolledwindow + box,
-/* From widgets/notebooks.css */
 notebook > stack:not(:only-child),
 notebook > header > tabs > tab,
-/* From widgets/ranges.css */
-scrollbar > contents > trough > slider,
-scale > contents > trough > slider,
-/* From widgets/window-decorations.css */
+slider,
 .titlebar:backdrop,
-/* From application-styles/wnck.css */
 wnck-tasklist > button.flat,
-/* From application-styles/mate-panel.css */
 MatePanelAppletFrameDBus > MatePanelAppletFrameDBus
 {
 	border-image-source: url('../gtk-assets/borders/border.png');
@@ -41,32 +29,22 @@ button.flat:active,
 button.flat:checked,
 button.link:active,
 button.link:checked,
-switch,
-/* From widgets/color-choosers.css */
 colorswatch,
-/* From widgets/lists-and-views.css */
 calendar,
-/* From widgets/miscellaneous.css */
 statusbar > *,
 statusbar button:not(:active):not(:checked),
-/* From application-styles/wnck.css */
 wnck-tasklist > button.flat:active,
 wnck-tasklist > button.flat:checked
 {
 	border-image-source: url('../gtk-assets/borders/border-sunken.png');
 }
 
-/* From widgets/color-choosers.css */
 colorchooser box.popover,
-/* From widgets/menus-and-popups.css */
 menu,
 popover,
 .app-notification,
-/* From widgets/window-decorations.css */
 * > decoration,
-/* From application-styles/mate-panel.css */
 #MatePanelPopupWindow,
-/* From application-styles/lightdm.css */
 #login_window,
 #shutdown_dialog,
 #restart_dialog
@@ -74,11 +52,9 @@ popover,
 	border-image-source: url('../gtk-assets/borders/menu-border.png');
 }
 
-/* From widgets/lists-and-views.css */
 entry,
 textview,
 :not(stack) > list,
-/* From application-styles/caja.css */
 widget.entry:not(:selected)
 {
 	border-image-source: url('../gtk-assets/borders/entry-border.png');
