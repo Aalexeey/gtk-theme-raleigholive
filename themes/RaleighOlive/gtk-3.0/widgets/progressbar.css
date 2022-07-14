@@ -3,41 +3,43 @@
  *****************/
 
 progressbar.horizontal trough,
+.trough.horizontal {
+	min-height: 19px;
+}
+
 progressbar.horizontal progress,
-.trough.horizontal,
-.progressbar.horizontal
-{
-	min-height: 20px;
+.progressbar.horizontal {
+	min-height: 17px;
+	margin: 0px 0px 0px 1px;
 }
 
 progressbar.vertical trough,
-progressbar.vertical progress,
-.trough.vertical,
-.progressbar.vertical
-{
-	min-width: 19px;
+.trough.vertical {
+	min-width: 20px;
 }
 
-progressbar trough
-{
+progressbar.vertical progress,
+.progressbar.vertical {
+	min-width: 18px;
+	margin: 1px 0px 0px 0px;
+}
+
+progressbar trough {
 	background-color: @bar_bg_color;
 	border-width: 1px;
 	border-style: solid;
 	border-color: @dark_bg_color @selected_fg_color @selected_fg_color @dark_bg_color;
 }
 
-progressbar > trough:not(.empty) > progress,
-levelbar > trough:not(.empty) > progress
-{
+progressbar > trough:not(.empty) > progress {
 	background-color: @hover_bg_color;
-	border-image-source: url('../../gtk-assets/borders/progress-border.png');
+	border-image-source: url('../../gtk-assets/borders/border.png');
 	border-image-width: 1px 2px 2px 1px;
 	border-image-slice: 1 2 2 1;
 }
 
 .progressbar,
-treeview.progressbar
-{
+treeview.progressbar {
     color: @selected_fg_color;
 	background-color: @selected_bg_color;
 	border-image-source: url('../../gtk-assets/borders/border.png');
@@ -46,11 +48,12 @@ treeview.progressbar
 }
 
 .trough,
-treeview.trough
-{
+treeview.trough {
     color: @fg_color;
 	background-color: @bg_color;
 	border-image-source: url('../../gtk-assets/borders/border-sunken.png');
 	border-image-width: 2px 1px 1px 2px;
 	border-image-slice: 2 1 1 2;
 }
+
+/* top right bottom left */

@@ -3,11 +3,20 @@
  *********************************/
 
 levelbar {
-  padding: 2px; 
+    padding: 2px; 
 }
 
 levelbar trough {
 	background: @bar_bg_color;
+  	border-color: @dark_border_color @light_border_color @light_border_color @dark_border_color;
+	border-style: solid;
+	border-width: 1px;
+
+  /*
+   * This is to remove the distracting and redundant black lines that would
+   * otherwise appear in the center of our fine scale indicator marks.
+   */
+    color: transparent;
 }
 
 levelbar.vertical trough {
@@ -19,14 +28,15 @@ levelbar.horizontal trough {
 }
 
 levelbar block {
-    background-image: none;
-    background-color: @selected_bg_color;
-	margin: 1px;
+	margin: 0px;
 	padding: 3px;
 }
 
 levelbar block.filled {
 	background: @selected_bg_color;
+	border-image-source: url('../../gtk-assets/borders/border.png');
+	border-image-width: 1px 2px 2px 1px;
+	border-image-slice: 1 2 2 1;
 }
 
 levelbar block.empty {
@@ -39,4 +49,6 @@ levelbar.vertical.discrete block {
 
 levelbar.horizontal.discrete block {
   margin-right: 2px;
-} 
+}
+
+/* top right bottom left */ 

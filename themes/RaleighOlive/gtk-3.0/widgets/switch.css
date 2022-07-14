@@ -3,24 +3,30 @@
  ***************************/
 
 switch {
+	border-color: @dark_border_color @light_border_color @light_border_color @dark_border_color;
+	border-style: solid;
+	border-width: 1px;
 	background-color: @bar_bg_color;
-    border-image-width: 2px 1px 1px 2px;
-	border-image-slice: 2 1 1 2;
-	padding: 2px;
+
+  /*
+   * This is to remove the distracting and redundant black lines that would
+   * otherwise appear in the center of our fine scale indicator marks.
+   */
+  color: transparent;
 }
 
 /* Ползунок */
 switch > slider
 {
-	border-image-source: url('../../gtk-assets/borders/progress-border.png');
+	border-image-source: url('../../gtk-assets/borders/border.png');
 	border-image-width: 1px 2px 2px 1px;
 	border-image-slice: 1 2 2 1;
 	background-color: @bg_color;
-	margin: -1px -1px -1px -1px;
+	margin: 0px;
     border-width: 1px;
 	border-style: solid;
     min-width: 28px;
-    min-height: 12px;
+    min-height: 14px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 10px 10px;
@@ -39,3 +45,5 @@ switch > slider:checked
 switch slider:hover {
 	background-color: @hover_bg_color;
 }
+
+/* top right bottom left */

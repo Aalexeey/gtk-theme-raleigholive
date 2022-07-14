@@ -11,25 +11,9 @@ separator
 {
 	border-style: solid;
 	border-width: 1px;
-	border-color: @dark_bg_color @selected_fg_color @selected_fg_color @dark_bg_color;
-	margin: 2px;
+	border-color: @border_color @selected_fg_color @selected_fg_color @border_color;
+	margin: 1px;
 }
-
-
-/*
- * A special case for the separator between two sides of a paned widget.
- *
- * This kind of separator really has very little to do with the separator
- * above.  In fact, we have to unset many properties, including the border.
- * This kind of separator includes a centered background image of seven dots
- * to show that the separator can be dragged.
- *
- * XXX:  Due to a GTK+ bug, centered backgrounds are aligned at the true center
- * of a widget / CSS node even if one or both dimensions of the node are odd
- * numbers.  Therefore, the background image will be blurred if the paned
- * widget is an odd number of pixels tall.  There appears to be no workaround
- * for this bug as of yet.
- */
 
 paned > separator
 {
@@ -37,6 +21,7 @@ paned > separator
 	background-position: center;
 	background-repeat: no-repeat;
 	border: none;
+	margin: 0px;
 }
 
 paned > separator:hover

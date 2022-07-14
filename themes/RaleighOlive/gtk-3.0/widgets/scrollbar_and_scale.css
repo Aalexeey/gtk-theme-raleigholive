@@ -1,17 +1,12 @@
 /**************************
  * Scrollbars and scales *
  **************************/
- 
-/*
- * Under any normal circumstances, we'd add the border to the trough, not
- * the entire scrollbar/scale node.  But we actually *want* a border around
- * the entire scrolbar/scale -- that's how it was done in GTK+ 2!
- */
+
 scrollbar > contents,
 scale > contents,
 scale > marks > mark > indicator /* Give scale indicators a 3D-ish look-and-feel */
 {
-	border-color: @dark_bg_color @selected_fg_color @selected_fg_color @dark_bg_color;
+	border-color: @dark_border_color @light_border_color @light_border_color @dark_border_color;
 	border-style: solid;
 	border-width: 1px;
 

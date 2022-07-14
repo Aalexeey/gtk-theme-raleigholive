@@ -17,7 +17,7 @@ filechooser entry {
 
 /* Три совмещённые кнопки навигации по папкам */
 filechooser .linked button:first-child {
-	margin: -5px 6px 5px -6px;
+	margin: -5px 6px 5px -5px;
 }
 
 filechooser .linked button {

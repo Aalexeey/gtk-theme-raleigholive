@@ -2,9 +2,6 @@
  * Buttons *
  ***********/
 
-
-/* Buttons */
-
 button
 {
 	background-color: @bg_color;
@@ -120,7 +117,7 @@ button.suggested-action
 button.suggested-action:hover,
 button.suggested-action:active
 {
-	background-color: @suggested_hover_bg_color;
+	background-color: @hover_bg_color;
 }
 
 button.suggested-action:active,
@@ -128,4 +125,5 @@ button.suggested-action:checked
 {
 	border-image-source: url('../../gtk-assets/borders/question-suggested-border-sunken.png');
 }
+
 /* top right bottom left */
