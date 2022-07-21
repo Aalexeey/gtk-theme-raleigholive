@@ -1,12 +1,12 @@
 [Desktop Entry]
 Name=RaleighOlive
 Type=X-GNOME-Metatheme
-Comment=A theme which closely mimics Red Hat's Raleigh GTK+ theme from ~2002
+Comment=A modified theme which closely mimics Red Hat's Raleigh GTK+ theme from ~2002
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
 GtkTheme=RaleighOlive
 MetacityTheme=RaleighOlive
 GtkColorScheme=fg_color:#000000000000,bg_color:#dddde3e3d4d4,text_color:#000000000000,base_color:#ffffffffffff,selected_fg_color:#ffffffffffff,selected_bg_color:#8a8aaeae5a5a,tooltip_fg_color:#000000000000,tooltip_bg_color:#eaeaf5f5b5b5
-IconTheme=gnome-wise
+IconTheme=RaleighOlive
 CursorTheme=DMZ-White
