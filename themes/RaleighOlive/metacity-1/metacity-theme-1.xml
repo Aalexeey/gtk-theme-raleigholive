@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
   <info>
-    <name>Raleigh</name>
-    <author>Gordon N. Squash</author>
-    <copyright>&#xC2; 2021-2022 Gordon N. Squash</copyright>
-    <date>September 4, 2021; February 11, 2022</date>
-    <description>Simple, clean, and classic theme, inspired by an old Red Hat version.</description>
+    <name>RaleighOlive</name>
+    <author>Aalexeey</author>
+    <copyright>&#xC2; 2022 Aalexeey</copyright>
+    <date>June 19, 2021; July 21, 2022</date>
+    <description>A modified theme which closely mimics Red Hat's Raleigh GTK+ theme.</description>
   </info>
   <frame_geometry name="normal">
     <distance name="left_width" value="7"/>
