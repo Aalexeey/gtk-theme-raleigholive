@@ -7,11 +7,11 @@ gtk-color-scheme = "base_color:#ffffff\nfg_color:#000000\ntooltip_fg_color:#0000
 style "default" {
 	GtkWidget::link-color         = @link_color
 	GtkWidget::visited-link-color = @visited_link_color
-	GtkScrollbar::slider-width = 14         # Default 14
-	GtkRange::stepper-size = 14             # Default 14
-	GtkRange::arrow-scaling = 0.5           # Default 0.5
-    GtkWidget::scroll-arrow-hlength = 16    # Default 16
-    GtkWidget::scroll-arrow-vlength = 16    # Default 16
+#	GtkScrollbar::slider-width = 14         # Default 14
+#	GtkRange::stepper-size = 14             # Default 14
+#	GtkRange::arrow-scaling = 0.5           # Default 0.5
+#   GtkWidget::scroll-arrow-hlength = 16    # Default 16
+#   GtkWidget::scroll-arrow-vlength = 16    # Default 16
 
 	bg[NORMAL]        = @bg_color
 	bg[PRELIGHT]      = '#f3f5ef'           # Bars, sliders and tabs trough bg
