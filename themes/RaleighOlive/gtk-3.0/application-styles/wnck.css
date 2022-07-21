@@ -32,10 +32,13 @@ wnck-tasklist > button.flat:checked
  * being I have no idea how to style the pager correctly, so keep this
  * commented out.
  */
-/*wnck-pager
+wnck-pager,
+PanelApplet.wnck-applet .wnck-pager
 {
 	border-image-source: url('../../gtk-assets/common/entry-border.png');
 	border-image-width: 2px;
 	border-image-slice: 2;
 	padding: 2px;
-}*/
+}
+
+/* top right bottom left */

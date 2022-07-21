@@ -38,8 +38,7 @@ progressbar > trough:not(.empty) > progress {
 	border-image-slice: 1 2 2 1;
 }
 
-.progressbar,
-treeview.progressbar {
+.progressbar {
     color: @selected_fg_color;
 	background-color: @selected_bg_color;
 	border-image-source: url('../../gtk-assets/borders/border.png');
@@ -47,13 +46,13 @@ treeview.progressbar {
 	border-image-slice: 1 2 2 1;
 }
 
-.trough,
-treeview.trough {
-    color: @fg_color;
-	background-color: @bg_color;
-	border-image-source: url('../../gtk-assets/borders/border-sunken.png');
-	border-image-width: 2px 1px 1px 2px;
-	border-image-slice: 2 1 1 2;
+treeview.progressbar {
+    color: @selected_fg_color;
+	background-color: @selected_bg_color;
+	border-image-source: url('../../gtk-assets/borders/progress-border.png');
+	border-image-width: 1px 2px 2px 1px;
+	border-image-slice: 1 2 2 1;
+
 }
 
 /* top right bottom left */

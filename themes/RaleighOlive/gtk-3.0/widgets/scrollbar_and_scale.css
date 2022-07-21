@@ -75,7 +75,8 @@ scale.vertical > contents > trough
  * current value.
  */
 /* scrollbar slider, */
-scale > contents > trough > slider
+scale > contents > trough > slider,
+scrollbar > contents > trough > slider
 {
 	background-position: center;
 	background-repeat: no-repeat;
@@ -91,12 +92,14 @@ scale.vertical > marks > mark > indicator
 	min-width: 10px;
 }
 
-scale.horizontal > contents > trough > slider
+scale.horizontal > contents > trough > slider,
+scrollbar.horizontal > contents > trough > slider
 {
 	background-image: url('../../gtk-assets/miscellaneous/scale-tick-horizontal.png');
 }
 
-scale.vertical > contents > trough > slider
+scale.vertical > contents > trough > slider,
+scrollbar.vertical > contents > trough > slider
 {
 	background-image: url('../../gtk-assets/miscellaneous/scale-tick-vertical.png');
 }
@@ -140,56 +143,47 @@ scrollbar.vertical > contents > button.down
 }
 
 scrollbar.vertical {
-	margin: -30px -3px -30px -3px;
+	margin: -30px -3px -31px -3px;
 	padding: 28px 0 29px 3px;
 	border-left: 2px solid;
-    border-image-source: url('../../gtk-assets/borders/border.png');
+    border-image-source: url('../../gtk-assets/borders/border-left-vscrollbar.png');
     border-image-slice: 2;
     box-shadow: none;
     background: @bg_color;
+    border-right: 1px solid @light_border_color;
 }
 
-notebook scrollbar.vertical {
-	margin: -28px -3px -30px -3px;
-}
+expander:not(.header) scrolledwindow scrollbar.vertical {
+   	margin: -3px -3px -31px -3px;
+	padding: 1px 0 29px 3px;
+} 
 
 scrollbar.vertical:dir(rtl) {
-	margin: -30px -3px -30px 0px;
+	margin: -30px -3px -30px -3px;
 	padding: 29px 3px 29px 0;
-	border-left: 2px;
 	border-right: 2px solid;
-    border-image-source: url('../../gtk-assets/borders/border-sunken-rtl.png');
-    border-image-slice: 2;
-    box-shadow: none;
-    background: @bg_color;
+    border-image-source: url('../../gtk-assets/borders/border-right-vscrollbar.png');
+}
+
+expander:not(.header) scrolledwindow scrollbar.vertical:dir(rtl) {
+   	margin: -2px -3px -32px -3px;
+	padding: 0px 3px 29px 3px;
 }
 
 scrollbar.horizontal {
-	margin: -2px -5px -3px -2px;
-	padding: 3px 0 0 0px;
+	margin: -3px -2px -3px -2px;
+	padding: 3px 0px 0px 0px;
 	border-top: 2px solid;
-    border-image-source: url('../../gtk-assets/borders/border.png');
+    border-image-source: url('../../gtk-assets/borders/border-top-hscrollbar.png');
     border-image-slice: 2;
     box-shadow: none;
     background: @bg_color;
-}
-
-notebook scrollbar.horizontal {
-	margin: -3px 0px -1px 0px;
-}
-
-treeview ~ scrollbar.horizontal {
-	margin: -2px -1px -3px -2px;
+    border-bottom: 1px solid @light_border_color;
 }
 
 scrollbar.horizontal:dir(rtl) {
-	margin: -2px -2px -1px -2px;
-	padding: 3px 0 0 0;
-	border-top: 2px solid;
-    border-image-source: url('../../gtk-assets/borders/border.png');
-    border-image-slice: 2;
-    box-shadow: none;
-    background: @bg_color;
+	margin: -2px -2px -3px -2px;
+	padding: 2px 0px 0px 0px;
 }
 
 /* top right bottom left */

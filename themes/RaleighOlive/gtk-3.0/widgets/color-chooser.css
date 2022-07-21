@@ -21,8 +21,7 @@ scale.horizontal.color > contents > trough
 /* Color swatches (often used in color buttons as well as the color chooser) */
 
 /* Give color swatches a sunken border, just like they had in GTK+ 2. */
-colorswatch
-{
+colorswatch {
 	border-image-width: 2px 1px 1px 2px;
 	border-image-slice: 2 1 1 2;
 	padding: 2px 1px 1px 2px;
@@ -81,3 +80,5 @@ colorchooser box.popover
 	border-image-slice: 2;
 	margin: 3px 0px 3px 0px;
 }
+
+/* top right bottom left */

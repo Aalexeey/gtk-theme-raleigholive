@@ -34,7 +34,7 @@ levelbar block {
 
 levelbar block.filled {
 	background: @selected_bg_color;
-	border-image-source: url('../../gtk-assets/borders/border.png');
+	border-image-source: url('../../gtk-assets/borders/progress-border.png');
 	border-image-width: 1px 2px 2px 1px;
 	border-image-slice: 1 2 2 1;
 }

@@ -126,4 +126,12 @@ button.suggested-action:checked
 	border-image-source: url('../../gtk-assets/borders/question-suggested-border-sunken.png');
 }
 
+/* Только кнопка выбора цвета, с полем цвета */
+button.color colorswatch.light.activatable {
+    min-height: 14px;
+	border-image-source: url('../../gtk-assets/borders/border.png');
+	margin: 0px 34px 0px 34px;
+    padding: 2px;
+}
+
 /* top right bottom left */

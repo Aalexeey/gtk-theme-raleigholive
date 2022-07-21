@@ -16,15 +16,18 @@ filechooser entry {
 }
 
 /* Три совмещённые кнопки навигации по папкам */
-filechooser .linked button:first-child {
+filechooser .linked button:first-child,
+filechooser revealer > box > stack .linked button:first-child {
 	margin: -5px 6px 5px -5px;
 }
 
-filechooser .linked button {
+filechooser .linked button,
+filechooser revealer > box > stack .linked button {
 	margin: -5px 6px 5px -6px;
 }
 
-filechooser .linked button:last-child {
+filechooser .linked button:last-child,
+filechooser revealer > box > stack .linked button:last-child {
 	margin: -5px 6px 5px -6px;
 }
 

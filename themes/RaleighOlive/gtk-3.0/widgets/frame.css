@@ -7,10 +7,20 @@ frame
 	margin: 0 4px;
 }
 
+/* Влияет и на .popup панели, например на force-quit кнопку и часы */
 frame > border
 {
-	margin: 0 -4px;
-	padding: 2px;
+	margin: 0px -5px -1px -4px;
+	padding: 5px;
+	border-image-width: 2px;
+	border-image-slice: 2;
+	border-image-source: url('../../gtk-assets/borders/frame-border.png');
+}
+
+frame > border.flat
+{
+	border: 0px;
+	padding: 0px;
 }
 
 /*
@@ -22,53 +32,39 @@ frame > border
 	border: 1px solid @border_color;
 }
 
-frame.border-outset border {
+frame.border-outset border,
+frame.border-inset border,
+frame.border-groove border,
+frame.border-ridge border {
+	margin: 0px -4px;
     padding: 2px;
     border: 2px solid;
-    border-image-source: url('../../gtk-assets/borders/border.png');
     border-image-slice: 2;
     border-radius: 0px;
     box-shadow: none; 
 }
 
-frame.border-outset label {
-    padding-right: 4px; 
+frame.border-outset border {
+    border-image-source: url('../../gtk-assets/borders/border.png');
 }
 
 frame.border-inset border {
-    padding: 2px;
-    border: 2px solid;
     border-image-source: url('../../gtk-assets/borders/border-sunken.png');
-    border-image-slice: 2;
-    border-radius: 0px;
-    box-shadow: none; 
-}
-frame.border-inset label {
-    padding-right: 4px; 
 }
 
 frame.border-groove border {
-    padding: 2px;
-    border: 2px solid;
     border-image-source: url('../../gtk-assets/borders/frame-border.png');
-    border-image-slice: 2;
-    border-radius: 0px;
-    box-shadow: none; 
-}
-
-frame.border-groove label {
-    padding-right: 4px; 
 }
 
 frame.border-ridge border {
-    padding: 2px;
-    border: 2px solid;
     border-image-source: url('../../gtk-assets/borders/frame-border-ridge.png');
-    border-image-slice: 2;
-    border-radius: 0px;
-    box-shadow: none; 
 }
 
+frame.border-outset label,
+frame.border-inset label,
+frame.border-groove label,
 frame.border-ridge label {
-    padding-right: 4px; 
+    padding: 0px 2px 0px 1px; 
 }
+
+/* top right bottom left */

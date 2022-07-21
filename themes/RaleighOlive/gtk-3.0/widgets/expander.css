@@ -4,7 +4,13 @@
  
 expander title {
 
-    padding: 2px 60px 3px 2px;
+    padding: 2px 114px 3px 2px;
+}
+
+expander > title > arrow:dir(rtl) {
+
+    margin: 0px 0px 0px 0px;
+        padding: 2px 0px 3px 2px;
 }
 
 expander title:hover
@@ -29,3 +35,12 @@ expander > title > arrow:checked
 {
 	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
+
+expander textview {
+   	border: 2px solid;
+	border-image-source: url('../../gtk-assets/borders/border-sunken.png');
+	border-image-slice: 2;
+    box-shadow: none;
+}
+
+/* top right bottom left */

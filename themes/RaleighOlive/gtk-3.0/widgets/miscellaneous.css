@@ -96,7 +96,9 @@ paper
 	background-image: url('../../gtk-assets/miscellaneous/resize-grip.png');
 }
 
-window:not(.mate-panel-menu-bar):not(.gnome-panel-menu-bar):not(.xfce4-panel) {
+window:not(.mate-panel-menu-bar):not(.gnome-panel-menu-bar):not(.xfce4-panel):not(.popup):not(#MatePanelPopupWindow):not(.mate-panel-applet-slider) {
 	background: url('../../gtk-assets/miscellaneous/resize-grip.png') no-repeat right bottom;
     background-color: @bg_color;
 }
+
+/* top right bottom left */

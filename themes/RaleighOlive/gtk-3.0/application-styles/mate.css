@@ -5,24 +5,31 @@
 /* Style rules for Atril */
 
 .atril-window scrolledwindow {
-    margin: 1px;
+    margin: 1px 0px 0px 1px;
+	padding: 0px;
+}
+
+.atril-window scrollbar.horizontal {
+	margin: -3px -2px -4px -2px;
+}
+
+.atril-window scrollbar.vertical {
+	margin: -3px -4px -30px -3px;
+	padding: 1px 0px 26px 3px;
 }
 
 /* Style rules for Caja */
 
-.view > widget.view
-{
+.view > widget.view {
 	background-color: @selected_fg_color;
 }
 
-.view > widget.view:selected
-{
+.view > widget.view:selected {
 	background-color: @selected_bg_color;
 }
 
 .view > widget.view:selected,
-.view > widget.view:selected *
-{
+.view > widget.view:selected * {
 	color: @selected_fg_color;
 }
 
@@ -39,8 +46,7 @@ widget.view.rubberband
  * Even though an EelEditableLabel is not a GtkEntry, we try our best to make
  * the two look identical.
  */
-widget.entry:not(:selected)
-{
+widget.entry:not(:selected) {
 	/*
 	 * Oddly, `background-color` does not work here; we must use
 	 * `background` in order for EelEditableLabels to have an appropriate
@@ -49,7 +55,7 @@ widget.entry:not(:selected)
 	background: @selected_fg_color;
 	border-image-width: 2px;
 	border-image-slice: 2;
-	border-radius: 0;
+	border-radius: 0px;
 }
 
 .caja-navigation-window scrolledwindow.frame {
@@ -67,7 +73,14 @@ widget.entry:not(:selected)
 	border-image-source: url('../../gtk-assets/borders/border-sunken.png');
 	border-image-slice: 2;
     box-shadow: none;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 1px;
+}
+
+/* Убирает стрелки из всплывающего меню например извлечение устройства */
+.caja-navigation-window .caja-side-pane .popup menu arrow {
+	min-height: 0px;
+	border: 0px;
+	padding: 0px;
 }
 
 .caja-navigation-window statusbar > * {
@@ -84,11 +97,11 @@ widget.entry:not(:selected)
 */
 
 .caja-navigation-window notebook scrollbar.horizontal {
-	margin: -3px -3px -1px -1px;
+	margin: -3px -3px -3px -1px;
 }
 
 .caja-navigation-window notebook scrollbar.vertical {
-	margin: -30px -1px -30px -3px;
+	margin: -30px -3px -30px -3px;
 }
 
 /* Style rules for EOM */
@@ -98,11 +111,12 @@ widget.entry:not(:selected)
 }
 
 .eom-window scrollbar.horizontal {
-    margin: 0px 0px 2px 0px;
+    margin: 0px -2px 2px 0px;
 }
 
 .eom-window scrollbar.vertical {
-    margin: -28px 0px -28px 0px;
+	margin: 1px -2px -21px 0px;
+	padding: 0px 0px 20px 3px;
 }
 
 .eom-window statusbar {;
@@ -116,49 +130,61 @@ widget.entry:not(:selected)
 
 /* Style rules for Engrampa */
 
+.engrampa-window scrolledwindow {
+    margin: 1px 0px 0px 1px;
+}
+
+.engrampa-window scrollbar.vertical {
+	margin: -30px -4px -31px -3px;
+}
+
 .engrampa-window statusbar {
     margin: 1px 0px 1px -14px;
 }
 
-.engrampa-window scrolledwindow {
-    margin: 1px;
-}
-
 /* Marco, the MATE window manager */
 
-window.background:selected
-{
+window.background:selected {
 	background-color: @selected_bg_color;
 	color: @selected_fg_color;
 }
 
-/* MATE Panel */
+/* MATE Panel .mate-panel-menu-bar */
 
 /* The panel menubar doesn't need a whole lot of padding -- adding the padding
  * has the effect of oversizing the panel and thus all the icons on the panel.
  */
-PanelWidget menubar
-{
-	border: none;
-	padding: 0;
+PanelWidget menubar {
+	border: 0px;
+	padding: 0px;
 }
 
-PanelWidget
-{
+PanelWidget {
     background-image: none;
 }
 
 /* Give some panel widgets (like the window list and the notification area) a draggable grip. */
 /* Ограничители похожие на разделители по краям апплетов внутрь на панели MATE */
-MatePanelAppletFrameDBus > MatePanelAppletFrameDBus
-{
-	border-image-width: 1px 0 2px 0;
+MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
+	border-image-width: 1px 0px 2px 0px;
 	border-image-slice: 1 2 2 1;
 	background-repeat: repeat-y;
 	background-position: top left;
-	background-size: 10px 4px;
+	background-size: 10px 5px;
 	background-image: url("../../gtk-assets/miscellaneous/panel-item-grip.png");
 }
+
+/* Panel popup windows frame, frame.css  */
+/*#MatePanelPopupWindow,
+.mate-panel-applet-slider
+{
+	border: 2px;
+    border-style: solid;
+	border-image-source: url('../../gtk-assets/borders/menu-border.png');
+	border-image-slice: 2;
+	box-shadow: none;
+}
+*/
 
 /* Style rules for MATE Terminal */
 
@@ -168,13 +194,23 @@ MatePanelAppletFrameDBus > MatePanelAppletFrameDBus
 	border-image-source: url('../../gtk-assets/borders/border-sunken.png');
 	border-image-slice: 2;
     box-shadow: none;
-    margin: 1px;
+    margin: 1px 3px 1px 1px;
+}
+
+.mate-terminal scrollbar.vertical {
+	margin: -2px -7px -30px -3px;
+	padding: 0px 0px 25px 3px;
 }
 
 /* Style rules for Pluma */
 
+.pluma-window scrollbar.vertical {
+	margin: -30px -4px -30px -3px;
+	padding: 28px 0px 26px 3px;
+}
+
 .pluma-window scrolledwindow {
-    margin: 0px;
+    margin: 0px -2px 0px 0px;
 }
 
 .pluma-print-preview scrolledwindow {
@@ -187,6 +223,12 @@ MatePanelAppletFrameDBus > MatePanelAppletFrameDBus
 
 .pluma-window statusbar > * {
 	padding: 3px 0px 1px 2px;
+}
+
+/* sidebar close button */
+.pluma-window paned.horizontal box.vertical notebook.frame toolbar button {
+    padding: 2px;
+    margin: -1px 0px -3px 0px;
 }
 
 /* top right bottom left */
