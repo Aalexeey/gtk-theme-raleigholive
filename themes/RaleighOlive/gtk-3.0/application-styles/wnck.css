@@ -1,11 +1,6 @@
-/*
- * WNCK widgets:  Used for window lists, desktop selectors, etc.
- *
- * This is in its own file since several desktops use these widgets,
- * not just one.  At the moment, the list includes LXDE, MATE, and XFCE,
- * among others.
- */
-
+/*****************************************************************
+ * WNCK widgets:  Used for window lists, desktop selectors, etc. *
+ *****************************************************************/
 
 /* The WNCK window list */
 
@@ -26,12 +21,6 @@ wnck-tasklist > button.flat:checked
 
 /* The WNCK desktop selector / pager */
 
-/*
- * Ugh, it looks like the WNCK pager is like the treeview and calendar widgets
- * in the sense that it doesn't have specially named subnodes.  For the time
- * being I have no idea how to style the pager correctly, so keep this
- * commented out.
- */
 wnck-pager,
 PanelApplet.wnck-applet .wnck-pager
 {
@@ -41,4 +30,5 @@ PanelApplet.wnck-applet .wnck-pager
 	padding: 2px;
 }
 
+/* parent > child */
 /* top right bottom left */

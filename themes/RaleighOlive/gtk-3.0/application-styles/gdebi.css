@@ -1,0 +1,12 @@
+/*********
+ * gdebi *
+ *********/
+ 
+/* GDebi vte-terminal view */
+dialog > box > box.vertical > expander > box.horizontal > scrollbar.vertical {
+   	margin: 0px 0px -1px -4px;
+	padding: 0px;
+}
+
+/* parent > child */
+/* top right bottom left */

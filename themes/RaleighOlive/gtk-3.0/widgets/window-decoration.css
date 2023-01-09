@@ -65,3 +65,29 @@ tooltip > decoration
 {
 	-gtk-icon-style: symbolic;
 }
+
+/* Header Bar * Верхняя гномо-панель */
+headerbar.default-decoration {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    min-height: 0px;
+    font-size: 0.6em;
+}
+
+headerbar.default-decoration button.titlebutton {
+    padding: 0px;
+    min-height: 0px;
+}
+
+/* HiDPI */
+.default-decoration {
+    min-height: 0; /* let the entry and button drive the titlebar size */
+    padding: 2px
+}
+
+.default-decoration .titlebutton {
+    min-height: 6px; /* tweak these two props to reduce button size */
+    min-width: 6px;
+}
+
+/* top right bottom left */

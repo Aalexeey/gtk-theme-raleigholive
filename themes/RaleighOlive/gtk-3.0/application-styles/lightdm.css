@@ -1,4 +1,6 @@
-/* Give LightDM "dialogs" a nice border like we give windows with CSDs */
+/*********************************************************************** 
+ * Give LightDM "dialogs" a nice border like we give windows with CSDs *
+ ***********************************************************************/
 
 #login_window,
 #shutdown_dialog,

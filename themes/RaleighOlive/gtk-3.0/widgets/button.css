@@ -130,8 +130,9 @@ button.suggested-action:checked
 button.color colorswatch.light.activatable {
     min-height: 14px;
 	border-image-source: url('../../gtk-assets/borders/border.png');
-	margin: 0px 34px 0px 34px;
+/*	margin: 0px 34px 0px 34px;
     padding: 2px;
+*/
 }
 
 /* top right bottom left */
