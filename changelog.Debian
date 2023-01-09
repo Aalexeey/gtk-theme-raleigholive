@@ -1,0 +1,50 @@
+gtk-theme-raleigholive (3.24.18+devuan) stable; urgency=low
+
+  * Scrollbars and colorchoosers code cleaning.
+  * VteTerminal scrollbar position in GDebi & Synaptic.
+
+ -- Aalexeey <https://debianforum.ru>  Mon, 09 Jan 2023 22:02:53 +0300
+
+gtk-theme-raleigholive (3.24.17+devuan) chimaera; urgency=low
+
+  * Scrollbars & frames code cleaning.
+  * Emblems icons changed.
+
+ -- Aalexeey <https://debianforum.ru/>  Thu, 21 Jul 2022 15:02:24 +0300
+
+gtk-theme-raleigholive (3.24.14+devuan) chimaera; urgency=low
+
+  * Theme polishing to match with GTK 2 raleigh style.
+
+ -- Aalexeey <https://debianforum.ru/>  Thu, 14 Jul 2022 22:55:03 +0300
+
+gtk-theme-raleigholive (3.24.11+devuan) chimaera; urgency=low
+
+  * Deep code cleaning.
+
+ -- Aalexeey <https://debianforum.ru/>  Sun, 10 Jul 2022 08:42:43 +0300
+
+gtk-theme-raleigholive (3.24.10+devuan) chimaera; urgency=low
+
+  * Code cleaning.
+  * Theme polishing to match with GTK 2 raleigh style.
+
+ -- Aalexeey <https://debianforum.ru/>  Fri, 08 Jul 2022 22:03:18 +0300
+
+gtk-theme-raleigholive (3.24.9+devuan) chimaera; urgency=low
+
+  * Theme polishing to match with GTK 2 raleigh style.
+
+ -- Aalexeey <https://debianforum.ru/>  Wed, 06 Jul 2022 19:43:42 +0300
+
+gtk-theme-raleigholive (3.24.8+devuan) chimaera; urgency=low
+
+  * Theme polishing to match with GTK 2 raleigh style.
+
+ -- Aalexeey <https://debianforum.ru/>  Thu, 30 Jun 2022 19:47:35 +0300
+
+gtk-theme-raleigholive (3.24.1+devuan) chimaera; urgency=low
+
+  * Initial Devuan package release.
+
+ -- Aalexeey <https://debianforum.ru/>  Fri, 10 Jun 2022 17:32:16 +0300
