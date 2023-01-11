@@ -7,7 +7,6 @@ assistant > *
 	padding: 6px;
 }
 
-
 /*
  * GTK+ 2 assistants didn't really have a sidebar, but we'll make the
  * GTK+ 3 sidebar look elegant anyway, since it's kind of a nice feature
@@ -40,3 +39,6 @@ assistant .sidebar > label.highlight
 	background-color: @selected_bg_color;
 	color: @selected_fg_color;
 }
+
+/* parent > child */
+/* top right bottom left */

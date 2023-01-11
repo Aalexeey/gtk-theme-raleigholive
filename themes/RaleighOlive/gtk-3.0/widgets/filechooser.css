@@ -31,4 +31,5 @@ filechooser revealer > box > stack .linked button:last-child {
 	margin: -5px 6px 5px -6px;
 }
 
+/* parent > child */
 /* top right bottom left */

@@ -1,8 +1,6 @@
-/*
- * Spinners
- * TODO:  It's hard to make authentic-looking spinners;
- * for the time being, keep this code commented out.
- */
+/************
+ * Spinners *
+ ************/
 
 @keyframes spin {
 	to { -gtk-icon-transform: rotate(1turn); }
@@ -23,3 +21,6 @@ spinner:disabled
 {
 	opacity: .5;
 }
+
+/* parent > child */
+/* top right bottom left */

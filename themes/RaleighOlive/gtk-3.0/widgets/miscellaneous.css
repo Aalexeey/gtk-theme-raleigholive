@@ -8,7 +8,6 @@
  * This is probably the simplest part of the theme, and certainly one of the
  * only sure-fire, entirely complete parts of the theme.
  */
-
 tooltip.background,
 .tooltip
 {
@@ -17,7 +16,6 @@ tooltip.background,
 }
 
 /* File choosers */
-
 filechooser > actionbar
 {
 	margin: 6px;
@@ -25,7 +23,6 @@ filechooser > actionbar
 
 
 /* Places sidebar:  Used primarily in the file chooser. */
-
 /*
  * Add a small space between the folder / bookmark / drive image and the
  * name of the place.
@@ -53,7 +50,6 @@ placessidebar button.sidebar-button
 /*
  * The emoji picker, that "wonderful" addition to GTK+ (3.24?) entry widgets.
  */
-
 .emoji-picker stack scrolledwindow
 {
 	background-color: @selected_fg_color;
@@ -75,7 +71,6 @@ placessidebar button.sidebar-button
 
 
 /* The GTK About dialog */
-
 /* Give the credits section a white background, as if it were a textview */
 dialog .dialog-vbox scrolledwindow.frame > viewport.view.frame
 {
@@ -84,7 +79,6 @@ dialog .dialog-vbox scrolledwindow.frame > viewport.view.frame
 
 
 /* The paper widget used by the Print dialog */
-
 paper
 {
 	background-color: @selected_fg_color;
@@ -101,4 +95,5 @@ window:not(.mate-panel-menu-bar):not(.gnome-panel-menu-bar):not(.xfce4-panel):no
     background-color: @bg_color;
 }
 
+/* parent > child */
 /* top right bottom left */

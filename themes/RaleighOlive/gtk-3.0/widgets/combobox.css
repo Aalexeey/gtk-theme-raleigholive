@@ -24,3 +24,6 @@ combobox button.combo cellview + arrow
 	padding: 0px 0px 0px 4px;
 	border-image-source: url('../../gtk-assets/separators/combobox-separator.png');
 }
+
+/* parent > child */
+/* top right bottom left */

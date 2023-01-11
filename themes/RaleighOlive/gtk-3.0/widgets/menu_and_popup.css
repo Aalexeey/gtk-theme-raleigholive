@@ -3,7 +3,6 @@
  *****************************************************/
 
 /* Menus and popovers */
-
 menu,
 popover,
 .app-notification
@@ -32,7 +31,6 @@ frame.app-notification > border
  * arrow buttons are supposed to have borders and backgrounds like normal
  * buttons do.
  */
-
 menu > arrow
 {
 	min-height: 9px;
@@ -63,7 +61,6 @@ menu > arrow.bottom
 
 
 /* Menu items, components of menu items, and popover model buttons */
-
 menuitem,
 menu > arrow,
 popover.menu modelbutton
@@ -129,7 +126,6 @@ menuitem > radio:dir(rtl)
 
 
 /* Menu bars */
-
 menubar
 {
 	border-image-width: 1px 2px 2px 1px;
@@ -140,3 +136,6 @@ menubar > menuitem
 {
 	padding: 4px 6px 4px 6px;
 }
+
+/* parent > child */
+/* top right bottom left */

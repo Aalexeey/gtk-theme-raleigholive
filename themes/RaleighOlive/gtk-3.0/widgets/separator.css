@@ -41,4 +41,5 @@ paned.vertical > separator
 	background-image: url('../../gtk-assets/separators/paned-separator-horizontal.png');
 }
 
+/* parent > child */
 /* top right bottom left */

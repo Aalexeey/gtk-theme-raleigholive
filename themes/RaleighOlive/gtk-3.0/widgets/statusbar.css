@@ -1,11 +1,6 @@
 /**************
  * Status bar *
- **************
- * Buttons that were packed into status bars in GTK+ 2 appeared sunken, some
- * of the few buttons that always appeared sunken at the time.  Some GTK+ 3
- * applications still do this -- for example, the Pluma text editor -- so we
- * handle the case where buttons appear in the status bar.
- */
+ **************/
 
 statusbar {
 	min-height: 18px;
@@ -62,4 +57,5 @@ statusbar box {
 	border: 0px;
 }
 
+/* parent > child */
 /* top right bottom left */

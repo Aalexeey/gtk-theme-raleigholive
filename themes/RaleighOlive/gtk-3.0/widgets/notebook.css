@@ -15,7 +15,6 @@ notebook > stack:not(:only-child)
 
 
 /* Notebook tabs */
-
 notebook > header > tabs > tab
 {
 	border-image-width: 1px 2px 2px 1px;
@@ -126,4 +125,5 @@ notebook tabs button {
     margin: -1px 0px -3px 0px;
 }
 
+/* parent > child */
 /* top right bottom left */

@@ -2,7 +2,6 @@
  * Views: Text, Tree, Entry, List, Calendar *
  *********************************************/
 
-
 /*
  * The most basic and generic styling: give every view widget an appropriate
  * background color -- often white for light themes and black or dark gray
@@ -111,3 +110,6 @@ calendar.button:hover
 {
 	background-color: @hover_bg_color;
 }
+
+/* parent > child */
+/* top right bottom left */

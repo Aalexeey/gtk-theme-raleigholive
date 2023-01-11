@@ -8,10 +8,10 @@ switch {
 	border-width: 1px;
 	background-color: @bar_bg_color;
 
-  /*
-   * This is to remove the distracting and redundant black lines that would
-   * otherwise appear in the center of our fine scale indicator marks.
-   */
+/*
+ * This is to remove the distracting and redundant black lines that would
+ * otherwise appear in the center of our fine scale indicator marks.
+ */
   color: transparent;
 }
 
@@ -46,4 +46,5 @@ switch slider:hover {
 	background-color: @hover_bg_color;
 }
 
+/* parent > child */
 /* top right bottom left */

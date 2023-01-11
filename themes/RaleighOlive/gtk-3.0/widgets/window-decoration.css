@@ -25,7 +25,6 @@ tooltip > decoration
 /*
  * Title bars and window titles.
  */
-
 .titlebar
 {
 	background-color: @bg_color;
@@ -90,4 +89,5 @@ headerbar.default-decoration button.titlebutton {
     min-width: 6px;
 }
 
+/* parent > child */
 /* top right bottom left */

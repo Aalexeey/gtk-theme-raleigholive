@@ -16,3 +16,6 @@ row:hover
 {
     background-color: @selected_unfocused_bg_color;
 }
+
+/* parent > child */
+/* top right bottom left */

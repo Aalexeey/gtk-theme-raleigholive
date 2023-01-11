@@ -58,3 +58,6 @@ widget.entry:not(:selected)
 {
 	border-image-source: url('../gtk-assets/borders/entry-border.png');
 }
+
+/* parent > child */
+/* top right bottom left */

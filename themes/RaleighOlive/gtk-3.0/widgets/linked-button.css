@@ -50,3 +50,6 @@ button:visited:hover *:not(:disabled) {
     text-decoration-line: underline;
     color: @visited_link_color;
 }
+
+/* parent > child */
+/* top right bottom left */

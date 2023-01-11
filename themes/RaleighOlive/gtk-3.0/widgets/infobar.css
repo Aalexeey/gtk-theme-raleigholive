@@ -2,7 +2,6 @@
  * Info bar *
  ************/
 
-
 infobar.error,
 infobar.info,
 infobar.question,
@@ -43,3 +42,6 @@ infobar.warning
 	background-color: @warning_bg_color;
 	border-image-source: url('../../gtk-assets/borders/warning-border.png');
 }
+
+/* parent > child */
+/* top right bottom left */

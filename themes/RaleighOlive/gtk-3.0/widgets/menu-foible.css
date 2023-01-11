@@ -17,5 +17,8 @@
 
 menu > arrow.bottom
 {
-	margin: 6px 0 -6px 0;
+	margin: 6px 0px -6px 0px;
 }
+
+/* parent > child */
+/* top right bottom left */
